@@ -1,0 +1,183 @@
+.klcf-hidden {
+  display: none;
+}
+
+.klcf-panel-header {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 980px;
+}
+.klcf-col-50 {
+  flex-basis: 50%;
+  box-sizing: border-box;
+}
+
+.klcf-status,
+#status_append {
+  color: #fff;
+  padding: 3px 6px;
+  font-weight: 700;
+  display: inline-block;
+  border-radius: 4px;
+}
+.klcf-status.activated,
+#status_append.active {
+  background-color: #32cd32;
+}
+.klcf-status.inactive,
+#status_append.inactive {
+  background-color: #ee1e1e;
+}
+
+.enable-integration-wrap {
+  border: 1px solid #135e96;
+  padding: 6px 10px !important;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+#klcf_enable_integration {
+  margin-top: -4px;
+}
+
+.klcf-update-notice {
+  display: flex;
+  align-items: center;
+}
+.klcf-update-notice input {
+  margin-left: 10px;
+}
+
+#klcf-container {
+  padding: 5px 20px 20px;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  max-width: 980px;
+  box-sizing: border-box;
+}
+
+#klcf-container th {
+  vertical-align: top;
+  text-align: left;
+  /*padding: 20px 10px 20px 0;*/
+  width: 200px !important;
+  line-height: 1.3;
+  font-weight: 600;
+}
+#klcf-container tr.klcf-integration-section th {
+  padding: 20px 10px 20px 20px;
+}
+tr.klcf-integration-section {
+  border-radius: 6px !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  padding: 10px !important;
+}
+
+#select-klaviyo-list {
+  width: 100%;
+}
+
+/*Map fields section*/
+.feature-section {
+  position: relative;
+  margin-top: 30px;
+  border-radius: 6px !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.feature-section th {
+  padding: 20px 10px 20px 20px;
+}
+
+.feature-section tr:nth-of-type(1) {
+  border-bottom: 2px solid #2271b1;
+}
+.feature-section table tr:not(:first-child):not(:last-child) {
+  border-bottom: 1px solid #e7d5d5;
+}
+
+.map-fields-data-row td:first-child,
+.map-fields-data-row td:nth-child(3),
+.map-custom-fields-data-row td:first-child,
+.map-custom-fields-data-row td:nth-child(3) {
+  width: 30%;
+}
+.map-fields-data-row td:nth-child(2),
+.map-fields-data-row td:nth-child(4),
+.map-custom-fields-data-row td:nth-child(2),
+.map-custom-fields-data-row td:nth-child(4) {
+  width: 20%;
+  text-align: center;
+}
+
+.map-fields-data-row td select,
+.map-custom-fields-data-row td select {
+  width: 100%;
+}
+
+/*Hide remove button on first fields */
+#custom-map-fields-table
+  tr:nth-child(2)
+  td:last-child
+  a
+  #map-fields-table
+  tr:nth-child(2)
+  td:last-child
+  a {
+  display: none;
+}
+.enable-feature-wrap {
+  border: 1px solid #135e96;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.klcf-config-form-error {
+  max-width: 980px;
+  color: rgb(245, 24, 24);
+  padding: 1px 10px;
+  border-radius: 5px;
+  border: 1px solid red;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+.klcf-config-form-error p {
+  margin: 5px 0;
+}
+.klcf-link-to-pro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -99;
+  color: #dddddd;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.60);
+  box-sizing: border-box;
+  opacity: 0;
+  color: #fff !important;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.feature-section:hover .klcf-link-to-pro {
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 1;
+  display: flex;
+}
+.klcf-link-to-pro .pro-feature-title{
+  font-size:28px;
+}
+.klcf-link-to-pro .pro-feature-btn-link{
+  margin-top: 18px;
+  font-size:16px;
+}
+
+#contact-form-editor-tabs #KLCF-tab a{
+    background: rgba(255, 255, 255, 0.5) url(../images/klaviyo-flag-mark.png) left center no-repeat;
+    background-size: 28px 20px;
+    padding-left: 30px;
+}
